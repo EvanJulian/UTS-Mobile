@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity= "center_vertical">
+    <!-- Arti dari match_parent adalah mengambil ukuran seluruh layar. -->
+    <!-- Arti dari wrap_content adalah ukuran seluruh layar mengikuti jumlah element yang ada
+     di layar.-->
+
+    <!-- Untuk menambahkan komponen, kita dapat memasukan komponen yang ingin kita tambahkan kedalam layout-->
+    <!-- Komponen yang ingin kita tambahkan dapat kita ambil memalui kelas view. -->
+
+    <!-- Text view merupakan komponen yang menampilkan teks biasa. -->
+    <TextView
+        android:text="@string/enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textName"/>
+    <!-- Edit Text merupakan komponen yang menerima input. -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/inputName"
+        />
+    <!-- Button digunakan untuk membuat tombol. -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/say_hello"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/showNameButton"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/sayHelloTextView"/>
+</LinearLayout>

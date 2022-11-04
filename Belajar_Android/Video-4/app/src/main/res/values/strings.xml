@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">aplikasi_empat</string>
+    <string name="button1">Use Click On Property</string>
+    <string name="button2">Using Anonymous Call</string>
+    <string name="button3">Using implement Interface</string>
+    <string name="output_on_click">Hello from on click</string>
+    <string name="output_anonymous">Hello from Anonymous</string>
+    <string name="output_implement">Hello from Implementing Interface</string>
+</resources>

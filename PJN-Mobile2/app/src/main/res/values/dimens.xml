@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="EditTextWidth">300dp</dimen>
+    <dimen name="EditTextHeight">30dp</dimen>
+    <dimen name="textSize">16dp</dimen>
+    <dimen name="layoutMargin">2dp</dimen>
+    <dimen name="tagWidth">20dp</dimen>
+</resources>

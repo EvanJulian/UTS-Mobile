@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">aplikasi_kedua</string>
+    <string name="label_out1">Label Output Number 1</string>
+    <string name="label_out2">Label Output Number 2</string>
+    <string name="button_click">Click Me</string>
+    <string name="label_out3">Label Output Number 3</string>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layoutMargin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nama"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="@dimen/EditTextWidth"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/textSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="656dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <TextView
+            android:id="@+id/umur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Umur:"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/nama" />
+
+        <EditText
+            android:id="@+id/editTextUmur"
+            android:layout_width="@dimen/EditTextWidth"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/editTextNama"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="616dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+        <TextView
+            android:id="@+id/programstudi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Program Studi:"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/nama" />
+
+        <EditText
+            android:id="@+id/editTextProgramStudi"
+            android:layout_width="@dimen/EditTextWidth"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/editTextUmur" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="576dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <TextView
+            android:id="@+id/Angkatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Angkatan:"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/programstudi" />
+
+        <EditText
+            android:id="@+id/editTextAngkatan"
+            android:layout_width="@dimen/EditTextWidth"
+            android:layout_height="@dimen/EditTextHeight"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/programstudi" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/hasil"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="470dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasil"
+        tools:layout_constraintTop_toBottomOf="@id/hasil">
+
+        <TextView
+            android:id="@+id/tagName"
+            android:layout_width="@dimen/tagWidth"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nama:"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/hasil" />
+
+        <TextView
+            android:id="@+id/resultName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="John Doe"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/hasil" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="440dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:layout_constraintTop_toBottomOf="@id/linearLayout5">
+
+        <TextView
+            android:id="@+id/tagUmur"
+            android:layout_width="@dimen/tagWidth"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Umur:"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/tagName" />
+
+        <TextView
+            android:id="@+id/resultUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="21"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="@id/resultName" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
